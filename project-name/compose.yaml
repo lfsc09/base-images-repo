@@ -1,0 +1,10 @@
+services:
+  run:
+    container_name: "angular-<project-name>"
+    environment:
+      - PORT=4200
+    cpu_count: 1
+    mem_limit: 512m
+    tty: true
+    ports:
+      - ${PORT}:80
