@@ -1,10 +1,12 @@
 services:
-  run:
+  app:
+    build:
+      context: ./
+      args:
+        - PROJECT_NAME=<project-name>
     container_name: "angular-<project-name>"
-    environment:
-      - PORT=4200
     cpu_count: 1
     mem_limit: 512m
     tty: true
     ports:
-      - ${PORT}:80
+      - 4201:80
