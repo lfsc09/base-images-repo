@@ -1,7 +1,27 @@
-# Repositories
+# <project-name>
 
-## Angular
+## Initialize Node project
 
 ```bash
-git clone --single-branch --branch angular https://github.com/lfsc09/base-images-repo.git <project-name>
+npm install
 ```
+
+## Run the project
+
+### For developing
+
+```bash
+npm run dev
+```
+
+## Build
+
+```bash
+docker compose up --build --detach
+```
+
+```bash
+docker compose down
+```
+
+_Access project on `127.0.0.1` if inside `WSL2`._
